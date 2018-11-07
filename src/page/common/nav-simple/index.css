@@ -1,0 +1,17 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-06 18:34:50
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-06 18:40:24
+*/
+.nav-simple {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.nav-simple .logo {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #c60023;
+}

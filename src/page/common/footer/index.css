@@ -1,0 +1,26 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-06 20:54:36
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-06 20:58:09
+*/
+
+.footer {
+    padding-bottom: 10px;
+}
+
+.footer .links {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+
+.footer .links .link{
+    padding: 0 10px;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
