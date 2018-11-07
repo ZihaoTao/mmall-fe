@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:51:49
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-01 21:49:23
+* @Last Modified time: 2018-11-06 23:46:57
 */
 
 var webpack = require('webpack');
@@ -13,10 +13,11 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 console.log(WEBPACK_ENV);
 // method to get index of html-webpack-plugin
-var getHtmlConfig = function(name) {
+var getHtmlConfig = function(name, title) {
     return {
         template: './src/view/' + name + '.html',
         filename: 'view/' + name + '.html',
+        title: title,
         inject: true,
         hash: true,
         chunks: ['common', name]
@@ -28,6 +29,7 @@ var config = {
         'common': ['./src/page/common/index.js'],
         'index': ['./src/page/index/index.js'],
         'login': ['./src/page/login/index.js'],
+        'result': ['./src/page/result/index.js']
     },
     output: {
         path: './dist',
@@ -41,7 +43,17 @@ var config = {
         loaders: [
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             {test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
+            {test: /\.string$/, loader: 'html-loader'}
         ]
+    },
+    resolve : {
+        alias : {
+            node_modules    : __dirname + '/node_modules',
+            util            : __dirname + '/src/util',
+            page            : __dirname + '/src/page',
+            service         : __dirname + '/src/service',
+            image           : __dirname + '/src/image'
+        }
     },
     plugins: [
         //independent common modules to /js.base.js
@@ -52,8 +64,9 @@ var config = {
         // package css into file
         new ExtractTextPlugin("css/[name].css"),
         // deal with html template
-        new HtmlWebpackPlugin(getHtmlConfig('index')),
-        new HtmlWebpackPlugin(getHtmlConfig('login'))
+        new HtmlWebpackPlugin(getHtmlConfig('index', 'home')),
+        new HtmlWebpackPlugin(getHtmlConfig('login', 'log in')),
+        new HtmlWebpackPlugin(getHtmlConfig('result', 'result'))
     ]
 };
 
