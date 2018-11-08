@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 20:35:27
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 20:44:15
+* @Last Modified time: 2018-11-07 19:51:35
 */
 .nav {
     background-color: #eee;
@@ -16,7 +16,7 @@
 }
 
 .nav .user.login {
-    display: none;
+    display: none; 
 }
 
 .nav .user .link {

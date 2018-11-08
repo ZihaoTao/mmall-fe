@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 17:35:28
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 18:13:53
+* @Last Modified time: 2018-11-07 22:31:55
 */
 /* css reset */
 * {
@@ -40,6 +40,26 @@ input[type='checkbox'] {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+}
+
+/* panel */
+.panel {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white; 
+}
+
+.panel .panel-title {
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.panel .panel-body {
+    padding: 10px;
+    overflow: hidden; 
 }
 
 /* global layout sample */

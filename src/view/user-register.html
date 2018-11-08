@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> - zihao mall</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav-simple.html') %>
+        <div class="page-wrap">
+            <div class="w">
+                <div class="user-con">
+                    <div class="user-title">Sign up</div>
+                    <div class="user-box">
+                        <div class="error-item" id="error-username">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                        <div class="user-item">
+                            <lable class="user-label" for="username">
+                                <i class="fa fa-user"></i>
+                            </lable>
+                            <input class="user-content" id="username" 
+                            placeholder="User Name" autocomplete="off">
+                        </div>
+                        <div class="error-item" id="error-password">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                        <div class="user-item">
+                            <lable class="user-label" for="password">
+                                <i class="fa fa-lock"></i>
+                            </lable>
+                            <input type="password" class="user-content" id="password" 
+                            placeholder="Password" autocomplete="off">
+                        </div>
+                         <div class="error-item" id="error-password-confirm">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                         <div class="user-item">
+                            <lable class="user-label" for="password-confirm">
+                                <i class="fa fa-lock"></i>
+                            </lable>
+                            <input type="password" class="user-content" id="password-confirm" 
+                            placeholder="Please input password again" autocomplete="off">
+                        </div>
+
+                         <div class="user-item">
+                            <lable class="user-label" for="phone">
+                                <i class="fa fa-phone"></i>
+                            </lable>
+                            <input class="user-content" id="phone" 
+                            placeholder="Mobile phone number" autocomplete="off">
+                        </div>
+
+
+
+                        <div class="user-item">
+                            <lable class="user-label" for="email">
+                                <i class="fa fa-envelope"></i>
+                            </lable>
+                            <input class="user-content" id="email" 
+                            placeholder="E-mail address" autocomplete="off">
+                        </div>
+
+                        <div class="user-item">
+                            <lable class="user-label" for="question">
+                                <i class="fa fa-question"></i>
+                            </lable>
+                            <input class="user-content" id="question" 
+                            placeholder="Security question" autocomplete="off">
+                        </div>
+
+                        <div class="user-item">
+                            <lable class="user-label" for="answer">
+                                <i class="fa fa-key"></i>
+                            </lable>
+                            <input class="user-content" id="answer" 
+                            placeholder="Security question answer" autocomplete="off">
+                        </div>
+
+                        <a class="btn btn-submit" id="submit">Register</a>
+                        <div class="link-item">
+                            <a> Aleady have an acount?
+                            <a class="link" href="./user-login.html" 
+                            target="_blank">Login here</a></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <%= require('html-loader!./layout/footer.html') %>
+    </body>
+</html>

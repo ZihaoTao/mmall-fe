@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:04:33
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 21:55:08
+* @Last Modified time: 2018-11-07 22:22:09
 */
 /* header */
 .header .logo {
@@ -13,6 +13,7 @@
     font-size: 36px;
     color: #c60023;
     font-weight:bold;
+    text-decoration: none;
 }
 
 .header .search-con{
@@ -35,8 +36,16 @@
     text-align: center;
 }
 
-
-
+/* Breadcrumb Trail */
+.crumb {
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 14px;
+    border-top: 1px solid #c60023;
+}
 
 
 

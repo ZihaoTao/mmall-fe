@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:51:49
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 23:46:57
+* @Last Modified time: 2018-11-08 11:55:12
 */
 
 var webpack = require('webpack');
@@ -28,7 +28,12 @@ var config = {
     entry: {
         'common': ['./src/page/common/index.js'],
         'index': ['./src/page/index/index.js'],
-        'login': ['./src/page/login/index.js'],
+        'user-login': ['./src/page/user-login/index.js'],
+        'user-register': ['./src/page/user-register/index.js'],
+        'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
+        'user-center': ['./src/page/user-center/index.js'],
+        'user-center-update': ['./src/page/user-center-update/index.js'],
+        'user-pass-update': ['./src/page/user-pass-update/index.js'],
         'result': ['./src/page/result/index.js']
     },
     output: {
@@ -64,9 +69,14 @@ var config = {
         // package css into file
         new ExtractTextPlugin("css/[name].css"),
         // deal with html template
-        new HtmlWebpackPlugin(getHtmlConfig('index', 'home')),
-        new HtmlWebpackPlugin(getHtmlConfig('login', 'log in')),
-        new HtmlWebpackPlugin(getHtmlConfig('result', 'result'))
+        new HtmlWebpackPlugin(getHtmlConfig('index', 'Home')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Log in')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Register')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'Reset Password')),
+        new HtmlWebpackPlugin(getHtmlConfig('result', 'Result')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center', 'User Center')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'Change profile')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change password'))
     ]
 };
 

@@ -1,0 +1,17 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-07 21:54:53
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-08 00:58:40
+*/
+.form-line {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.form-line .label {
+    width: 120px;
+    text-align: left;
+    display: inline-block;
+}

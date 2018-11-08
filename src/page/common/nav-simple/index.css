@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 18:34:50
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 18:40:24
+* @Last Modified time: 2018-11-07 22:22:42
 */
 .nav-simple {
     height: 60px;
@@ -14,4 +14,5 @@
     font-size: 26px;
     font-weight: bolder;
     color: #c60023;
+    text-decoration: none;
 }
