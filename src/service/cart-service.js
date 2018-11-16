@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:11:35
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 21:11:46
+* @Last Modified time: 2018-11-15 15:12:43
 */
 /*
 * @Author: Rosen
@@ -16,7 +16,7 @@
 var _mm = require('util/mm.js');
 
 var _cart = {
-    // 获取购物车数量
+    // get Cart Count
     getCartCount : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/get_cart_product_count.do'),
@@ -24,7 +24,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 添加到购物车
+    // add To Cart
     addToCart : function(productInfo, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/add.do'),
@@ -33,7 +33,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 获取购物车列表
+    // get Cart List
     getCartList : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/list.do'),
@@ -41,7 +41,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 选择购物车商品
+    // select Product
     selectProduct : function(productId, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/select.do'),
@@ -52,7 +52,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 取消选择购物车商品
+    // unselect Product
     unselectProduct : function(productId, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/un_select.do'),
@@ -63,7 +63,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 选中全部商品
+    // select All Product
     selectAllProduct : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/select_all.do'),
@@ -71,7 +71,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 取消选中全部商品
+    // unselect All Product
     unselectAllProduct : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/un_select_all.do'),
@@ -79,7 +79,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 更新购物车商品数量
+    // update Product
     updateProduct : function(productInfo, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/update.do'),
@@ -88,7 +88,7 @@ var _cart = {
             error   : reject
         });
     },
-    // 删除指定商品
+    // delete Product
     deleteProduct : function(productIds, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/cart/delete_product.do'),

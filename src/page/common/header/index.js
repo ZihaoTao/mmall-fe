@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:04:25
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-06 21:58:16
+* @Last Modified time: 2018-11-14 17:48:24
 */
 'use strict';
 require('./index.css');
@@ -11,6 +11,7 @@ var _mm = require('util/mm.js');
 var header = {
     init : function(){
         this.bindEvent();
+        this.onload();
     },
     onload: function() {
         var keyword= _mm.getUrlParam('keyword');

@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:51:49
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-08 11:55:12
+* @Last Modified time: 2018-11-15 20:25:33
 */
 
 var webpack = require('webpack');
@@ -28,6 +28,9 @@ var config = {
     entry: {
         'common': ['./src/page/common/index.js'],
         'index': ['./src/page/index/index.js'],
+        'list': ['./src/page/list/index.js'],
+        'detail': ['./src/page/detail/index.js'],
+        'cart': ['./src/page/cart/index.js'],
         'user-login': ['./src/page/user-login/index.js'],
         'user-register': ['./src/page/user-register/index.js'],
         'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
@@ -70,6 +73,9 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         // deal with html template
         new HtmlWebpackPlugin(getHtmlConfig('index', 'Home')),
+        new HtmlWebpackPlugin(getHtmlConfig('list', 'Category List')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart', 'Cart')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail', 'Product Detail')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Log in')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Register')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'Reset Password')),

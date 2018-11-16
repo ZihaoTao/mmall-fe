@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 14:28:19
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-07 12:29:08
+* @Last Modified time: 2018-11-14 14:42:00
 */
 'use strict';
 
@@ -70,14 +70,15 @@ var _mm = {
             return !!value;
         }
         // mobile validation
+        // Regular Expression
         if('phone' === type) {
             return /^(\+\d{1,3}[- ]?)?\d{10}$/.test(value);
         }
         // email validation
+        // Regular Expression
         if('email' === type) {
             return /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(value);
         }
-
     },
     // login
     doLogin : function() {
