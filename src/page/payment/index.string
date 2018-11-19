@@ -1,0 +1,6 @@
+<p class="payment-tips">Your order has been submitted successfully! </p>
+<p class="payment-tips orderNo">Please finish payment. Order Number: {{orderNo}}</p>
+<p class="payment-tips enhance">Please scan qr code to complete payment: </p>
+<div class="img-con">
+    <img class="qr-code" src="{{qrUrl}}" alt="qr code"/>
+</div>

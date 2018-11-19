@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:51:49
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-19 00:15:02
+* @Last Modified time: 2018-11-19 10:53:53
 */
 
 var webpack = require('webpack');
@@ -34,6 +34,7 @@ var config = {
         'order-confirm': ['./src/page/order-confirm/index.js'],
         'order-list': ['./src/page/order-list/index.js'],
         'order-detail': ['./src/page/order-detail/index.js'],
+        'payment': ['./src/page/payment/index.js'],
         'user-login': ['./src/page/user-login/index.js'],
         'user-register': ['./src/page/user-register/index.js'],
         'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
@@ -81,6 +82,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm', 'Order Confirmation')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list', 'Order List')),
         new HtmlWebpackPlugin(getHtmlConfig('order-detail', 'Order Detail')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment', 'Order Payment')),
         new HtmlWebpackPlugin(getHtmlConfig('detail', 'Product Detail')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Log in')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Register')),
