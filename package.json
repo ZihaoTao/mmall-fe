@@ -33,6 +33,7 @@
     "webpack-dev-server": "^1.16.5"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "state-cities": "^1.0.6"
   }
 }

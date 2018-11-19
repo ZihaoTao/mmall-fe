@@ -1,0 +1,60 @@
+<div class="model close">
+    <div class="model-container">
+        <div class="model-header">
+            {{#isUpdate}}
+            <h1 class="model-title">Update Address</h1>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <h1 class="model-title">New Address</h1>
+            {{/isUpdate}}
+            <i class="fa fa-close close"></i>
+        </div>
+        <div class="model-body">
+            <div class="form">
+                <div class="form-line">
+                    <label class="label" for=""><span class="required">* </span>Full name:</label>
+                    <input class="form-item" id="receiver-name" value="{{data.receiverName}}" />
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-state">
+                        <span class="required">* </span>
+                        State & City:
+                    </label>
+                    <select class="form-item" id="receiver-state">
+                        <option value="">--Please select--</option>
+                    </select>
+                    <select class="form-item" id="receiver-city">
+                        <option value="">--Please select--</option>          
+                    </select>
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-address">
+                        <span class="required">* </span>
+                        Street address:
+                    </label>
+                    <input class="form-item" id="receiver-address" value="{{data.receiverAddress}}"/>
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-phone">
+                        <span class="required">* </span>
+                        Phone number:
+                    </label>
+                    <input class="form-item" id="receiver-phone" value="{{data.receiverPhone}}"/>
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-zip">Zip Code:</label>
+                    <input class="form-item" id="receiver-zip" value="{{data.receiverZip}}"/>
+                </div>
+                <div class="form-line">
+                    <input type="hidden" id="receiver-id" value="{{data.id}}">
+                    {{#isUpdate}}
+                    <a class="btn address-btn">Save address</a>
+                    {{/isUpdate}}
+                    {{^isUpdate}}
+                    <a class="btn address-btn">Add address</a>
+                    {{/isUpdate}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

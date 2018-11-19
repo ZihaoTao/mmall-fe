@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-15 20:24:33
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-16 01:29:46
+* @Last Modified time: 2018-11-16 11:58:40
 */
 
 'user strict'
@@ -120,7 +120,7 @@ var page = {
         $(document).on('click', '.btn-submit', function() {
             // total price > 0 
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = "./confirm.html";
+                window.location.href = "./order-confirm.html";
             } else {
                 _mm.errorTips('Please select products before checking out.');
             }

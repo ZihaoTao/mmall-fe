@@ -1,0 +1,74 @@
+<div class="panel">
+    <div class="panel-title">
+        Order Information
+    </div>
+    <div class="panel-body">
+        <div class="order-info">
+            <div class="text-line">
+                <span class="text">Order Number: {{orderNo}}</span>
+                <span class="text">Creation time: {{createTime}}</span>
+            </div>
+            <div class="text-line">
+                <span class="text">
+                    Receiver: 
+                    {{receiverName}} 
+                    {{shippingVo.receiverCity}} 
+                    {{shippingVo.receiverProvince}}
+                    {{shippingVo.receiverAddress}}
+                    {{shippingVo.receiverMobile}}
+                </span>
+            </div>
+            <div class="text-line">
+                <span class="text">Order Status: {{statusDesc}}</span>
+            </div>
+            <div class="text-line">
+                <span class="text">Payment method: {{paymentTypeDesc}}</span>
+            </div>
+            <div class="text-line">
+                {{#needPay}}
+                <a class="btn" href="./payment.html?orderNumber={{orderNo}}">CHECKOUT</a>
+                {{/needPay}}
+                {{#isCancelable}}
+                <a class="btn order-cancel">CANCEL</a>
+                {{/isCancelable}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel">
+    <div class="panel-title">
+        Product List
+    </div>
+    <div class="panel-body">
+        <table class="product-table">
+            <tr>
+                <th class="cell-th cell-img">&nbsp;</th>
+                <th class="cell-th cell-info">Product Detail</th>
+                <th class="cell-th cell-price">Price</th>
+                <th class="cell-th cell-count">Quantity</th>
+                <th class="cell-th cell-total">Subtotal</th>
+            </tr>
+            {{#orderItemVoList}}
+            <tr>
+                <td class="cell cell-img">
+                    <a href="./detail.html?productId={{productId}}" target="_blank">
+                        <img class="p-img" src="{{imageHost}}{{productImage}}" alt="{{productName}}" />
+                    </a>
+                </td>
+                <td class="cell cell-info">
+                    <a class="link" href="./detail.html?productId={{productId}}" target="_blank">
+                        {{productName}}
+                    </a>
+                </td>
+                <td class="cell cell-price">${{currentUnitPrice}}</td>
+                <td class="cell cell-count">{{quantity}}</td>
+                <td class="cell cell-total">${{totalPrice}}</td>
+            </tr>
+            {{/orderItemVoList}}
+        </table>
+        <p class="total">
+            <span>Total Price: </span>
+            <span class="total-price">${{payment}}</span>
+        </p>
+    </div>
+</div>

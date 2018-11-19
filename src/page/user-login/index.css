@@ -2,18 +2,25 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-07 00:26:50
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-07 01:09:53
+* @Last Modified time: 2018-11-16 11:14:03
 */
 /* Outermost container */
 .page-wrap {
     padding:40px 0;
-    background-color: #e72955;
+    background-image: url('../../image/background/pomegranate.jpg');
+    /*Photo by NordWood Themes on Unsplash*/
+    background-size: cover;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    height: 500px;
+
 }
 
 /* log in box */
 .user-con {
     position: relative;
-    margin: 0 auto;
+    margin: 100px auto;
     width: 400px;
     background-color: #fff;
 }
