@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-16 11:59:31
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-18 18:28:43
+* @Last Modified time: 2018-11-19 14:50:35
 */
 .address-item, .address-add {
     margin: 20px 20px 0 0;
@@ -183,7 +183,7 @@
 .form .form-line .label {
     display: block;
     float: left;
-    width: 80px;
+    width: 100px;
     text-align: right;
     height: 30px;
     line-height: 30px;

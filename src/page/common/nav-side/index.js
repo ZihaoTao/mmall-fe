@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 20:35:36
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-18 20:02:27
+* @Last Modified time: 2018-11-19 15:11:05
 */
 'use strict';
 require('./index.css');
@@ -13,9 +13,9 @@ var navSide = {
     option: {
         name: '',
         navList: [
-            {name: 'user-center', desc: 'user center', href: './user-center.html'},
-            {name: 'order-list', desc: 'My order', href: './order-list.html'},
-            {name: 'user-pass-update', desc: 'Change password', href: './user-pass-update.html'},
+            {name: 'user-center', desc: 'User Center', href: './user-center.html'},
+            {name: 'order-list', desc: 'My Order', href: './order-list.html'},
+            {name: 'user-pass-update', desc: 'Change Password', href: './user-pass-update.html'},
             {name: 'about', desc: 'About', href: './about.html'}
         ]
     },

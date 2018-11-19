@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:51:49
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-19 10:53:53
+* @Last Modified time: 2018-11-19 15:15:09
 */
 
 var webpack = require('webpack');
@@ -17,6 +17,7 @@ var getHtmlConfig = function(name, title) {
     return {
         template: './src/view/' + name + '.html',
         filename: 'view/' + name + '.html',
+        favicon: './favicon.ico',
         title: title,
         inject: true,
         hash: true,
@@ -41,11 +42,12 @@ var config = {
         'user-center': ['./src/page/user-center/index.js'],
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'user-pass-update': ['./src/page/user-pass-update/index.js'],
-        'result': ['./src/page/result/index.js']
+        'result': ['./src/page/result/index.js'],
+        'about': ['./src/page/about/index.js']
     },
     output: {
-        path: './dist',
-        publicPath: '/dist',
+        path: __dirname + '/dist/',
+        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.taozihao.xyz/mmall-fe/dist/',
         filename: 'js/[name].js'
     },
     externals: {
@@ -55,7 +57,14 @@ var config = {
         loaders: [
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             {test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
-            {test: /\.string$/, loader: 'html-loader'}
+            {
+                test: /\.string$/, 
+                loader: 'html-loader',
+                query: {
+                    minimize: true,
+                    removeAttributeQuotes: false
+                } 
+            }
         ]
     },
     resolve : {
@@ -90,7 +99,8 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('result', 'Result')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center', 'User Center')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'Change profile')),
-        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change password'))
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change password')),
+        new HtmlWebpackPlugin(getHtmlConfig('about', 'About'))
     ]
 };
 
