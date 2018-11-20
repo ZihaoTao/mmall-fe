@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-19 00:15:45
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-19 01:21:01
+* @Last Modified time: 2018-11-20 01:46:45
 */
 
 /* order detail */
@@ -82,5 +82,5 @@
 
 .total .total-price {
     font-weight: bold;
-    color: #c60023;
+    color: #ee3233;
 }

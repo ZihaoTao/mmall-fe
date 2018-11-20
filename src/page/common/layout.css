@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 17:35:28
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-19 00:10:04
+* @Last Modified time: 2018-11-20 11:52:39
 */
 /* css reset */
 * {
@@ -37,6 +37,13 @@ input[type='checkbox'] {
 
 .w {
     width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.indexW {
+    width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -92,7 +99,7 @@ input[type='checkbox'] {
     line-height: 40px;
     vertical-align: middle;
     border: none;
-    background-color: #c60023;
+    background-color: #ee3233;
     font-size: 17px;
     font-weight: bold;
     color: #fff;

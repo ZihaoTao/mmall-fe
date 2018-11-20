@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-16 11:59:31
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-19 14:50:35
+* @Last Modified time: 2018-11-20 01:46:43
 */
 .address-item, .address-add {
     margin: 20px 20px 0 0;
@@ -14,7 +14,7 @@
 }
 
 .address-item.active {
-    border: 3px dashed #c60023;
+    border: 3px dashed #ee3233;
 }
 
 .address-item:hover,
@@ -118,7 +118,7 @@
 
 .submit-con .submit-total {
     font-size: 18px;
-    color: #c60023;
+    color: #ee3233;
     font-weight: bold;
     vertical-align: middle;
     margin-right: 20px;

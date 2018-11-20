@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:42
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-15 15:06:07
+* @Last Modified time: 2018-11-20 02:00:18
 */
 
 /* pic */
@@ -44,7 +44,7 @@
 }
 
 .intro-wrap .p-img-con .p-img-item:hover {
-    border: 2px solid #c60023;
+    border: 2px solid #ee3233;
 }
 
 .intro-wrap .p-img-con .p-img-item .p-img {
@@ -65,7 +65,7 @@
 
 .intro-wrap .p-info-con .p-subtitle {
     font-size: 15px;
-    color: #c60023;
+    color: #ee3233;
     line-height: 30px;
 }
 
@@ -87,7 +87,7 @@
     padding: 10px;
 }
 .intro-wrap .p-info-con .p-price-con .info {
-    color: #c60023;
+    color: #ee3233;
     font-size: 18px;
 }
 
@@ -140,7 +140,7 @@
     background-color: #eee;
     border: 1px solid #ddd;
     overflow: hidden;
-    border-bottom: 1px solid #c60023;
+    border-bottom: 1px solid #ee3233;
 }
 
 .detail-wrap .tab-list .tab-item {
@@ -154,7 +154,7 @@
 }
 
 .detail-wrap .tab-list .tab-item.active {
-    background-color: #c60023;
+    background-color: #ee3233;
     color: #fff; 
 }
 
