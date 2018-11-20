@@ -2,8 +2,18 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-01 12:10:00
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 13:32:13
+* @Last Modified time: 2018-11-20 14:03:10
 */
+
+/* alert */
+.alert {
+    background-color: red;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
 /* banner-con */
 .banner-con {
     width: 100%;
