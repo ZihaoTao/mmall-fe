@@ -10,7 +10,7 @@
     <tr>
         <td class="cell-img">
             <a href="./detail.html?productId={{productId}}" target="_blank">
-                <img class="p-img" src="{{imgHost}}{{productImg}}" alt="{{productName}}"/>
+                <img class="p-img" src="{{imageHost}}{{productImage}}" alt="{{productName}}"/>
             </a>
         </td>
         <td class="cell-info">
