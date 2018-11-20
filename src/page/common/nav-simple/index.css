@@ -1,0 +1,20 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-06 18:34:50
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-16 01:44:44
+*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+.nav-simple {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.nav-simple .logo {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #ee3233;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive, serif;
+}

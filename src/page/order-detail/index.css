@@ -1,0 +1,86 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-19 00:15:45
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-19 01:21:01
+*/
+
+/* order detail */
+.order-info .text-line {
+    height: 30px;
+    line-height: 30px; 
+}
+
+.order-info .text-line .text {
+    margin-right: 30px;
+}
+
+.order-info .btn {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 10px;
+    float: right;
+}
+
+/* product list */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.product-table .cell-th {
+    background-color: #eee;
+}
+
+.product-table .cell {
+    border-bottom: 1px dashed #eee;
+    background-color: #fafafa;
+}
+.product-table .cell-img {
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+
+.product-table .cell-info {
+    width: 45%;
+    text-align: left;
+}
+
+.product-table .cell-price {
+    width: 15%;
+    text-align: center;
+}
+
+.product-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+
+.product-table .cell-total {
+    width: 15%;
+    text-align: center;
+}
+
+/* total price */
+.total {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.total .total-price {
+    font-weight: bold;
+    color: #c60023;
+}

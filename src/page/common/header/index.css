@@ -1,0 +1,56 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-06 21:04:33
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-16 01:45:35
+*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* header */
+.header .logo {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    display: block;
+    font-family: 'Pacifico', cursive, serif;
+    font-size: 40px;
+    color: #ee3233;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left:10px; 
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+
+.header .search-con .search-btn {
+    position: absolute;
+    height: 44px;
+    text-align: center;
+}
+
+/* Breadcrumb Trail */
+.crumb {
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 14px;
+    border-top: 1px solid #c60023;
+}
+
+
+
+
+
+

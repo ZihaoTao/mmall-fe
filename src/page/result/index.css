@@ -1,0 +1,30 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-06 23:33:37
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2018-11-07 00:04:56
+*/
+.page-wrap {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-con {
+    display: none;
+}
+
+.result-con .result-title {
+    color: #555;
+}
+
+.result-con .result-content {
+    margin-top: 20px;
+}
+
+.result-con .result-content .link{
+    magin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
