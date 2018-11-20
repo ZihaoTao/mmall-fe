@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:04:33
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 01:47:16
+* @Last Modified time: 2018-11-20 13:28:57
 */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* header */
@@ -12,7 +12,7 @@
 .header .logo {
     position: absolute;
     top: 25px;
-    left: 5px;
+    left: 35px;
     display: block;
     font-family: 'Pacifico', cursive, serif;
     font-size: 40px;
@@ -26,6 +26,7 @@
 }
 
 .header .search-con .search-input {
+    margin-left: 50px; 
     width: 550px;
     height: 40px;
     line-height: 40px;

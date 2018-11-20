@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 17:35:28
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 11:52:39
+* @Last Modified time: 2018-11-20 13:21:25
 */
 /* css reset */
 * {
@@ -36,7 +36,7 @@ input[type='checkbox'] {
 /* Fixed width layout */
 
 .w {
-    width: 1080px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
