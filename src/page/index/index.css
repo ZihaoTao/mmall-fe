@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-01 12:10:00
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 12:25:58
+* @Last Modified time: 2018-11-20 13:32:13
 */
 /* banner-con */
 .banner-con {
@@ -83,7 +83,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    left: 4%;
+    left: 3%;
 }
 
 .floor-wrap .floor-list .floor-item {
