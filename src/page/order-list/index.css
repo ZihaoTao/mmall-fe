@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-18 19:59:06
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-18 23:19:18
+* @Last Modified time: 2018-11-20 01:46:48
 */
 
 .order-list-table {
@@ -38,7 +38,7 @@
 
 .order-list-table .order-info .order-total {
     font-weight: bold;
-    color: #c60023;
+    color: #ee3233;
 }
 
 .order-list-table .order-info .order-detail {

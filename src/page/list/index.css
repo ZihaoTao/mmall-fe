@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:39:57
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-15 11:51:41
+* @Last Modified time: 2018-11-20 01:45:12
 */
 
 /* sort button */
@@ -25,8 +25,8 @@
 }
 
 .sort-con .sort-item.active {
-    background-color: #c60023;
-    border: 1px solid #c60023;
+    background-color: #ee3233;
+    border: 1px solid #ee3233;
     color: #fff;
 }
 
