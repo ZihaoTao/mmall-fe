@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-01 12:10:00
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 14:03:10
+* @Last Modified time: 2018-11-21 17:21:15
 */
 
 /* alert */
@@ -100,7 +100,7 @@
     position: relative;
     width: 22%;
     height: 300px;
-    margin: 15px 20px 15px 0;
+    margin: 10px 20px 10px 0;
     float: left;
     cursor: pointer;
     background-color: #fff;
