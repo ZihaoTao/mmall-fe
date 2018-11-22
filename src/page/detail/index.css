@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:42
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-21 17:36:19
+* @Last Modified time: 2018-11-21 18:05:19
 */
 
 /* pic */
@@ -13,12 +13,11 @@
 
 .intro-wrap .p-img-con {
     float:left;
-    width: 420px;
+    width: 42%;
 }
 
 /* main pic */
 .intro-wrap .p-img-con .main-img-con {
-    height: 400px;
     border: 1px solid #ddd;
 }
 
