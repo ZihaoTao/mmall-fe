@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:42
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 13:47:40
+* @Last Modified time: 2018-11-21 17:36:19
 */
 
 /* pic */
@@ -30,7 +30,6 @@
 /* sub pic */
 .intro-wrap .p-img-con .p-img-list {
     overflow: hidden;
-    height: 76px;
     margin-top: 5px;
     margin-right: -10px;
 }
@@ -38,8 +37,7 @@
 .intro-wrap .p-img-con .p-img-item {
     float: left;
     margin-right: 10px;
-    width: 30%;
-    height: 72px;
+    width: 20%;
     border: 2px solid #eee;
     cursor: pointer;
 }

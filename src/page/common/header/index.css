@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:04:33
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-20 13:28:57
+* @Last Modified time: 2018-11-21 17:42:31
 */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* header */
@@ -28,7 +28,7 @@
 .header .search-con .search-input {
     margin-left: 50px; 
     width: 550px;
-    height: 40px;
+    height: 39px;
     line-height: 40px;
     padding-left:10px; 
     font-size: 15px;
