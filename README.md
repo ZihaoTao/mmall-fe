@@ -2,9 +2,9 @@
 mmall-fe: frontend project
 
 
-##### installation
+##### Installation
 1. nodejs(6.14.1)
-* Website:https://nodejs.org/en/download/releases/
+* website:https://nodejs.org/en/download/releases/
 ```
 > wget https://nodejs.org/download/release/v6.14.1/node-v6.14.1-linux-x64.tar.gz
 ```
@@ -39,7 +39,7 @@ export PATH=$NODE_HOME/bin:$PATH
 > npm install hogan.js --save
 ```
 ##### Deployment
-1. Initialization  
+1. initialization  
 > cd mmall-fe   
 > npm install
 2. package    
