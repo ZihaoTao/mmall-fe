@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 14:28:19
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-21 17:44:41
+* @Last Modified time: 2018-11-24 20:39:49
 */
 /* banner */
 .banner{
@@ -20,8 +20,8 @@
 .banner .dots {
     position: absolute;
     left: 0;
-    right: 30px;
-    bottom: 400px;
+    right: 0;
+    bottom: 330px;
     text-align: center;
 }
 
@@ -43,4 +43,10 @@
 .banner .dots li.active {
     background: #fff;
     opacity: 1;
+}
+
+@media screen and (max-width:1000px) {
+    .banner-con .banner-arrow {
+        top: 80px;
+    }
 }
