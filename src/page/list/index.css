@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:39:57
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-21 17:27:27
+* @Last Modified time: 2018-11-24 20:48:52
 */
 
 /* sort button */
@@ -101,6 +101,12 @@
     font-weight: bold;
     text-align: center;
     background-color: #eee; 
+}
+
+@media screen and (max-width:1000px) {
+    .p-list-con .p-item {
+        margin: 0px 40px 20px 10px;
+    }
 }
 
 

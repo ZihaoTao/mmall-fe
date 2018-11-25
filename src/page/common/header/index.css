@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:04:33
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-21 17:42:31
+* @Last Modified time: 2018-11-24 20:19:43
 */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* header */
@@ -53,8 +53,23 @@
     border-top: 1px solid #ee3233;
 }
 
-
-
+@media screen and (max-width:1000px) {
+    .header .logo {
+        font-size: 30px;
+        top: 30px;
+        left: 0;
+    }
+    .header .search-con{
+        padding: 30px 0 30px 190px;
+    }
+    .header .search-con .search-input {
+        margin-left: 0; 
+        width: 190px;
+    }
+    .header .search-con .search-btn {
+        font-size: 15px;
+    }
+}
 
 
 
