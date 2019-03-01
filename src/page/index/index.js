@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-14 11:38:07
+* @Last Modified time: 2019-03-01 12:02:42
 */
 
 'use strict';
@@ -27,4 +27,6 @@ $(function() {
         var forward = $(this).hasClass('prev') ? 'prev' : 'next';
         $slider.data('unslider')[forward]();
     })
+    var cw = $('.floor-item').width();
+    $('.floor-item').css({'height':cw+'px'});
 });

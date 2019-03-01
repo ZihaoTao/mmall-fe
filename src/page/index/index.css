@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-01 12:10:00
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-24 20:39:01
+* @Last Modified time: 2019-03-01 12:07:25
 */
 
 /* alert */
@@ -33,6 +33,10 @@
 }
 
 /* floor */
+.floor-wrap {
+    width: 95%;
+    margin: auto auto;
+}
 .floor-wrap .floor-title {
     height: 50px;
     list-style: 50px;
@@ -98,8 +102,7 @@
 
 .floor-wrap .floor-list .floor-item {
     position: relative;
-    width: 316px;
-    height: 330px;
+    width: 22%;
     margin: 10px 30px 10px 0;
     float: left;
     cursor: pointer;
@@ -107,8 +110,7 @@
 }
 
 .floor-wrap .floor-list .floor-item:hover {
-    box-shadow: 1px 1px 7px #ddd;
-
+    box-shadow: 1px 1px 7px green;
 }
 
 .floor-wrap .floor-list .floor-item .floor-text {
@@ -136,8 +138,7 @@
         height: 300px;
     }
     .floor-wrap .floor-list .floor-item {
-        width: 215px;
-        height: 220px;
+        width: 40%;
         margin: 10px 30px 10px 0;
     }
     .floor-wrap .floor-list {
