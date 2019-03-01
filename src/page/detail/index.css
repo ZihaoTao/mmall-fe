@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:42
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-21 18:05:19
+* @Last Modified time: 2019-03-01 12:37:01
 */
 
 /* pic */
@@ -164,6 +164,8 @@
 .detail-wrap .detail-con img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 /* err tips */
