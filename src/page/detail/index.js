@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:34
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 16:26:49
+* @Last Modified time: 2019-03-01 16:36:16
 */
 
 'user strict'
@@ -24,8 +24,8 @@ var page = {
     },
     obload: function() {
         var w = $('.p-img-con').width();
-        $('.p-img-con').css({'height':cw+'px'});
-        var w = $('.p-img-item').width();
+        $('.p-img-con').css({'height':w+'px'});
+        var cw = $('.p-img-item').width();
         $('.p-img-item').css({'height':cw+'px'});
         // if no product id, go home
         if(!this.data.productId) {
