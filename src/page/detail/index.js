@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:34
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 16:44:16
+* @Last Modified time: 2019-03-01 16:45:48
 */
 
 'user strict'
@@ -79,8 +79,6 @@ var page = {
             $pageWrap.html(html);
             var cw = $('.p-img-item').width();
             $('.p-img-item').css({'height':cw+'px'});
-            var w = $('.p-img-con').width();
-            $('.p-img-con').css({'height':w + cw + 40 +'px'});
         }, function(errMsg) {
             $pageWrap.html('<p class="err-tip"> Cannot find this product. </p>');
         });
