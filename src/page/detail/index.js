@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:34
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-15 15:26:40
+* @Last Modified time: 2019-03-01 16:26:49
 */
 
 'user strict'
@@ -23,6 +23,10 @@ var page = {
         this.bindEvent();
     },
     obload: function() {
+        var w = $('.p-img-con').width();
+        $('.p-img-con').css({'height':cw+'px'});
+        var w = $('.p-img-item').width();
+        $('.p-img-item').css({'height':cw+'px'});
         // if no product id, go home
         if(!this.data.productId) {
             _mm.goHome();
