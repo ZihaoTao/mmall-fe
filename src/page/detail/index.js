@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:34
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 16:36:16
+* @Last Modified time: 2019-03-01 16:40:32
 */
 
 'user strict'
@@ -23,10 +23,6 @@ var page = {
         this.bindEvent();
     },
     obload: function() {
-        var w = $('.p-img-con').width();
-        $('.p-img-con').css({'height':w+'px'});
-        var cw = $('.p-img-item').width();
-        $('.p-img-item').css({'height':cw+'px'});
         // if no product id, go home
         if(!this.data.productId) {
             _mm.goHome();
@@ -81,6 +77,10 @@ var page = {
             // render
             html = _mm.renderHtml(templateIndex, res);
             $pageWrap.html(html);
+            var w = $('.p-img-con').width();
+            $('.p-img-con').css({'height':w+'px'});
+            var cw = $('.p-img-item').width();
+            $('.p-img-item').css({'height':cw+'px'});
         }, function(errMsg) {
             $pageWrap.html('<p class="err-tip"> Cannot find this product. </p>');
         });
