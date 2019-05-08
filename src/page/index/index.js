@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 12:02:42
+* @Last Modified time: 2019-05-08 11:42:02
 */
 
 'use strict';
@@ -29,4 +29,15 @@ $(function() {
     })
     var cw = $('.floor-item').width();
     $('.floor-item').css({'height':cw+'px'});
+
+    if(window.innerWidth > 1000) {
+        var bw = $('.banner-img').width();
+        $('.banner-img').css({'height':2.4 * cw+'px'});
+        $('.dots').css({'top':cw+'px'});
+    } else {
+        var bw = $('.banner-img').width();
+        $('.banner-img').css({'height':1.4* cw+'px'});
+        $('.dots').css({'top':0.6 * cw+'px'});
+    }
+    
 });
