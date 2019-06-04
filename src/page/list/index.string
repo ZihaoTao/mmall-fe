@@ -1,7 +1,7 @@
 {{#list}}
     <li class="p-item">
         <div class="p-img-con">
-            <a class="link" href="./detail.html?productId={{id}}" target="_blank">
+            <a class="link" href="./detail.html?productId={{id}}">
                 <img class="p-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}"/>
             </a>
         </div>
@@ -9,7 +9,7 @@
             <span class="p-price">${{price}}</span>
         </div>
         <div class="p-name-con">
-            <a class="p-name" href="./detail.html?productId={{id}}" target="_blank">{{name}}</a>
+            <a class="p-name" href="./detail.html?productId={{id}}">{{name}}</a>
         </div>
     </li>   
 {{/list}}

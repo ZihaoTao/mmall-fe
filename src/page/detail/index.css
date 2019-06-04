@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:42
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 16:25:03
+* @Last Modified time: 2019-06-04 00:26:38
 */
 
 /* pic */
@@ -59,7 +59,7 @@
 
 .intro-wrap .p-info-con .p-name {
     font-size: 20px;
-    color: #333;
+    color: #ccc;
 }
 
 .intro-wrap .p-info-con .p-subtitle {
@@ -82,7 +82,6 @@
 
 /* price */
 .intro-wrap .p-info-con .p-price-con {
-    background-color: #eee;
     padding: 10px;
 }
 .intro-wrap .p-info-con .p-price-con .info {
