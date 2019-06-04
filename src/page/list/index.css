@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:39:57
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-06-03 23:46:28
+* @Last Modified time: 2019-06-04 11:32:52
 */
 
 /* sort button */
@@ -96,13 +96,13 @@
 
 /* error tips */
 .err-tip {
+    width: 100%;
+    text-align: center;
     height: 60px;
     line-height: 60px;
-    color: #f60;
+    color: #ccc;
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
-    background-color: #eee; 
 }
 
 @media screen and (max-width:1000px) {
