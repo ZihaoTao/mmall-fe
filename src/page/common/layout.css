@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 17:35:28
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-06-03 22:41:47
+* @Last Modified time: 2019-06-03 23:56:34
 */
 /* css reset */
 * {
@@ -38,7 +38,6 @@ input[type='checkbox'] {
 .w {
     width: 90%;
     margin: 0 auto;
-    position: relative;
 }
 
 .indexW {
