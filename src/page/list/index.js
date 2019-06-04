@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:39:47
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-06-04 00:58:08
+* @Last Modified time: 2019-06-04 12:55:47
 */
 'use strict';
 require('./index.css');
@@ -102,6 +102,7 @@ var page = {
     }
 };
 $(function() {
+    $('.p-list-con .p-item .p-img-con').height($('.p-list-con .p-item .p-img-con').width());
     page.init();
 
 })
