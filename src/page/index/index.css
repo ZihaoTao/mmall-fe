@@ -3,7 +3,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-01 12:10:00
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-06-04 12:15:26
+* @Last Modified time: 2019-06-04 12:40:39
 */
 
 /* banner-con */
@@ -122,8 +122,8 @@
     .floor-wrap .floor-list {
         left: 7.5%;
     }
-    .floor-wrap .floor-list .floor-item .floor-img {
-        height: 90%;
+    .floor-wrap .floor-list .floor-item .floor-text {
+        font-size: 10px;
     }
 
     .home-title .title .text1 {
@@ -132,6 +132,10 @@
 
     .home-title .title .text2 {
         font-size: 15px;
+    }
+
+    .banner-con {
+        background-image: url("../../image/banner/banner2.jpg");
     }
 }
 
