@@ -2,73 +2,102 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 21:04:33
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-05-08 11:43:35
+* @Last Modified time: 2019-06-03 23:44:25
 */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 /* header */
 .header {
-    background-color: #202f3f;
+    background: transparent;
+    width: 100%;
+    z-index: 1;
 }
 .header .logo {
-    position: absolute;
-    top: 25px;
-    left: 35px;
-    display: block;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
     font-family: 'Pacifico', cursive, serif;
     font-size: 40px;
-    color: #ee3233;
+    color: white;
     font-weight:bold;
     text-decoration: none;
 }
 
 .header .search-con{
-    padding: 40px 0 30px 250px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    margin: auto auto;
+    width: 260px;
 }
 
 .header .search-con .search-input {
-    margin-left: 50px; 
-    width: 50%;
-    height: 39px;
-    line-height: 40px;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
     padding-left:10px; 
-    font-size: 15px;
-    border: 2px solid #fff;
+    font-size: 13px;
+    color: #ccc;
     outline: none;
+    background: transparent;
+    border: none;
 }
 
 .header .search-con .search-btn {
     position: absolute;
-    height: 44px;
-    text-align: center;
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.header .search-con .search-btn:hover {
+    background: white;
+    color: black;
+    transition: color 1.5s;
+    transition: background 1.5s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 25% auto 25% 10%;
+  grid-template-rows: auto;
 }
 
 /* Breadcrumb Trail */
 .crumb {
     height: 50px;
     line-height: 50px;
-    background-color: #eee;
+    background-color: transparent;
     color: #888;
     font-size: 14px;
     margin-bottom: 14px;
-    border-top: 1px solid #ee3233;
 }
 
 @media screen and (max-width:1000px) {
     .header .logo {
-        font-size: 30px;
-        top: 30px;
-        left: 0;
+        font-size: 20px;
     }
+
     .header .search-con{
-        padding: 30px 0 30px 190px;
+        width: 260px;
     }
+
     .header .search-con .search-input {
-        margin-left: 0; 
-        width: 190px;
+        width: 30%;
+        height: 25px;
     }
+
     .header .search-con .search-btn {
-        font-size: 15px;
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+        line-height: 25px;
+        padding: 0;
     }
+
 }
 
 

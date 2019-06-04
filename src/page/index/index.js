@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-05-08 11:42:02
+* @Last Modified time: 2019-06-03 23:40:08
 */
 
 'use strict';
@@ -15,29 +15,23 @@ var _mm = require('util/mm.js');
 var templateBanner = require('./banner.string');
 
 $(function() {
-    // banner render
-    var bannerHtml = _mm.renderHtml(templateBanner);
-    $('.banner-con').html(bannerHtml);
-    // initilaize banner
-    var $slider = $('.banner').unslider({
-        dots:true
-    });
-    //event listener
-    $('.banner-con .banner-arrow').click(function() {
-        var forward = $(this).hasClass('prev') ? 'prev' : 'next';
-        $slider.data('unslider')[forward]();
-    })
-    var cw = $('.floor-item').width();
-    $('.floor-item').css({'height':cw+'px'});
+    // // banner render
+    // var bannerHtml = _mm.renderHtml(templateBanner);
+    // $('.banner-con').html(bannerHtml);
+    // // initilaize banner
+    // var $slider = $('.banner').unslider({
+    //     dots:true
+    // });
+    // //event listener
+    // $('.banner-con .banner-arrow').click(function() {
+    //     var forward = $(this).hasClass('prev') ? 'prev' : 'next';
+    //     $slider.data('unslider')[forward]();
+    // });
 
-    if(window.innerWidth > 1000) {
-        var bw = $('.banner-img').width();
-        $('.banner-img').css({'height':2.4 * cw+'px'});
-        $('.dots').css({'top':cw+'px'});
-    } else {
-        var bw = $('.banner-img').width();
-        $('.banner-img').css({'height':1.4* cw+'px'});
-        $('.dots').css({'top':0.6 * cw+'px'});
-    }
-    
+    $('.floor-wrap .floor-list .floor-item').hover(function() {
+        $('.floor-wrap .floor-list .floor-item').toggleClass('item_hover');
+        $(this).toggleClass('item_hover');
+    });
+    $('.banner-con').height($('.banner-con').width() / 2);
+    $('.home-title').height($('.home-title').width() / 3);
 });

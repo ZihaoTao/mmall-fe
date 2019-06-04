@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:39:57
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 12:34:34
+* @Last Modified time: 2019-06-03 23:46:28
 */
 
 /* sort button */
@@ -19,15 +19,15 @@
     line-height: 24px;
     border: 1px solid #ccc;
     margin-right: -1px;
-    background-color: #fff;
-    color: #333;
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
 
 .sort-con .sort-item.active {
-    background-color: #ee3233;
-    border: 1px solid #ee3233;
-    color: #fff;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
 }
 
 .sort-con .sort-item .fa-sort-desc{
