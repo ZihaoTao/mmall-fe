@@ -2,13 +2,13 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 23:22:34
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-03-01 16:45:48
+* @Last Modified time: 2019-06-04 00:58:28
 */
 
 'user strict'
 require('./index.css');
 require('page/common/nav/index.js');
-require('page/common/header/index.js');
+require('page/common/header-white/index.js');
 var _cart = require('service/cart-service.js');
 var _product = require('service/product-service.js');
 var _mm = require('util/mm.js');

@@ -2,12 +2,12 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:39:47
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2018-11-15 11:54:48
+* @Last Modified time: 2019-06-04 00:58:08
 */
 'use strict';
 require('./index.css');
 require('page/common/nav/index.js');
-require('page/common/header/index.js');
+require('page/common/header-white/index.js');
 var _product = require('service/product-service.js');
 var _mm = require('util/mm.js');
 var Pagination = require('util/pagination/index.js');

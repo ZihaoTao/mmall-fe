@@ -1,0 +1,104 @@
+/*
+* @Author: Zihao Tao
+* @Date:   2018-11-06 21:04:33
+* @Last Modified by:   Zihao Tao
+* @Last Modified time: 2019-06-04 00:59:48
+*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* header */
+.header {
+    width: 100%;
+    z-index: 1;
+}
+.header .logo {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive, serif;
+    font-size: 40px;
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.header .search-con{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    margin: auto auto;
+    width: 260px;
+}
+
+.header .search-con .search-input {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    padding-left:10px; 
+    font-size: 13px;
+    color: #ccc;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.header .search-con .search-btn {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.header .search-con .search-btn:hover {
+    background: black;
+    color: white;
+    transition: color 1.5s;
+    transition: background 1.5s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 25% auto 25% 10%;
+  grid-template-rows: auto;
+}
+
+/* Breadcrumb Trail */
+.crumb {
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width:1000px) {
+    .header .logo {
+        font-size: 20px;
+    }
+
+    .header .search-con{
+        width: 260px;
+    }
+
+    .header .search-con .search-input {
+        width: 30%;
+        height: 25px;
+    }
+
+    .header .search-con .search-btn {
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+        line-height: 25px;
+        padding: 0;
+    }
+
+}
+
+
+
