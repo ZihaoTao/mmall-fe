@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-06 22:21:32
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-06-27 13:46:23
+* @Last Modified time: 2019-06-27 13:54:54
 */
 /* nav main body */
 .nav-side {
@@ -27,5 +27,4 @@
 /* right container */
 .content.with-nav {
     float: left;
-    width: 50%;
 }
