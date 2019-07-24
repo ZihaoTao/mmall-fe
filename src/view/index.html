@@ -8,42 +8,50 @@
         <%= require('html-loader!./layout/nav.html') %>
         <%= require('html-loader!./layout/header.html') %>
         <div class="indexW">
-            <div class="floor-wrap">
-                <ul class="floor-list">
-                    <li class="floor-item">
-                        <a href="./list.html?categoryId=100001">
-                            <span class="floor-text">SPEAKERS</span>
-                        </a>
-                    </li>
-                    <li class="floor-item">
-                        <a href="./list.html?categoryId=100002">
-                            <span class="floor-text">HEADPHONES</span>
-                        </a>
-                    </li>
-                    <li class="floor-item">
-                        <a href="./list.html?categoryId=100003">
-                            <span class="floor-text">IN-EAR</span>
-                        </a>
-                    </li>
-                    <li class="floor-item">
-                        <a href="./list.html?categoryId=100004">
-                            <span class="floor-text">AUDIO</span>
-                        </a>
-                    </li>
-                    <li class="floor-item">
-                        <a href="./list.html?categoryId=100005">
-                            <span class="floor-text">ACCESSORIES</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="product">
+              <div class="filter">
+                <div class="Category">
+                  <div id="Category-title" class="title">
+                    Category
+                    <div id="Category-plus" class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                    <div id="Category-minus" class="minus hidden">
+                    <i class="fas fa-minus"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="menubar" id="Category-menubar">
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="banner-con">
-        </div>
-        <div class="home-title">
-            <div class="title">
-                <p class="text1">POWER THE MOTION</p>
-                <p class="text2">Ready for the summer</p>
+
+
+
+            <div class="right">
+              <div class="producr-header">
+                <div id="size" class="size"></div>
+                <div class="sort">
+                  <ul class="sort-con">
+                      <li class="sort-item active" data-type="default">
+                          Featured
+                      </li>
+                      <li class="sort-item" data-type="price">
+                        <span>Price</span>
+                        <i class="fas fa-sort-up"></i>
+                        <i class="fas fa-sort-down"></i>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="generate">
+                <!-- list container -->
+                <ul class="p-list-con"></ul>
+                <!-- page container -->
+                <div class="pagination"></div>
+              </div>
             </div>
         </div>    
         <%= require('html-loader!./layout/footer.html') %>
