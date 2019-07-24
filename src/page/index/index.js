@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 16:28:45
+* @Last Modified time: 2019-07-24 16:51:36
 */
 
 'use strict';
@@ -20,7 +20,7 @@ let count = 0;
 
 let templateIndex = `
   {{#list}}
-      <li class="ACCESSORIES">{{name}}</li>
+      <li>{{name}}</li>
   {{/list}}
 `;
 
@@ -192,6 +192,7 @@ let templatePagination  = `<div class="pg-content">
                 listHtml = _mm.renderHtml(templateCategory, {
                     list: res.data
                 });
+                console.log(res.data);
                 $('.Category-items').html(listHtml);
             });
 
