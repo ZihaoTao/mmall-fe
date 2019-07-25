@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 18:19:20
+* @Last Modified time: 2019-07-24 18:24:55
 */
 
 'use strict';
@@ -134,7 +134,7 @@ let templatePagination  = `<div class="pg-content">
                 $('#Category-menubar').html(listHtml);
                 $('#Category-menubar').children().each(function() {
                     $(this).click(function() {
-                        var id = $(this).attr('id');                        _this.data.listParam.pageNum = 1;
+                        var id = $(this).attr('class');                        _this.data.listParam.pageNum = 1;
                         _this.data.listParam.all = 1;
                         _this.data.listParam.categoryId = id;
                         _this.loadList();
