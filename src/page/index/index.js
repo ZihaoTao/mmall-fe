@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 17:40:17
+* @Last Modified time: 2019-07-24 17:41:38
 */
 
 'use strict';
@@ -191,6 +191,8 @@ let templatePagination  = `<div class="pg-content">
                 listHtml = _mm.renderHtml(templateCategory, {
                     list: res
                 }); 
+                console.log(res);
+                $('#Category-menubar').html(listHtml);
                 let categoryItems = $('#Category-menubar').children;
                 for (let i = 0; i < categoryItems.length; i++) {
                     categoryItems[i].click(function() {
@@ -203,9 +205,6 @@ let templatePagination  = `<div class="pg-content">
                         _this.loadList();
                     });
                 }
-
-                console.log(res);
-                $('#Category-menubar').html(listHtml);
             });
 
             if(_this.data.listParam.all === 1) {
