@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 17:24:32
+* @Last Modified time: 2019-07-24 17:29:58
 */
 
 'use strict';
@@ -18,13 +18,13 @@ var templateBanner = require('./banner.string');
 
 let count = 0;
 
-let templateIndex = `
+let templateCategory = `
   {{#list}}
       <li>{{name}}</li>
   {{/list}}
 `;
 
-let templateCategory = `
+let templateIndex = `
   {{#list}}
       <li class="p-item">
           <div class="p-img-con">
