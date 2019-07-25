@@ -189,8 +189,9 @@ li:hover {
 }
 
 /* list con */
-.producr-header {
-  height: 50px;
+.product-header {
+    height: 50px;
+    padding: 0px 5%;
 }
 
 .p-list-con {
@@ -198,6 +199,7 @@ li:hover {
     margin-bottom: 15px;
     overflow: hidden;
     font-size: 16px;
+    padding: 0px 5%;
 }
 
 .p-color {
