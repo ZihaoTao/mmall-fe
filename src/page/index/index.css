@@ -1,22 +1,22 @@
 li {
     list-style-type:none;
-    }
+}
 
-    li:hover {
+li:hover {
     cursor: pointer;
-    }
+}
 
-    .border {
+.border {
     border: 0;
     height: 1px;
     background: rgb(200, 200, 200, 0.9);
-    }
+}
 
-    .product {
+.product {
     overflow: hidden;
-    }
+}
 
-    .filter {
+.filter {
     float: left;
     border: solid 1px #d9d9d9;
     border-radius: 5px;
@@ -29,64 +29,64 @@ li {
     font-size: 13px;
     margin-top: 20px;
     line-height: 1em;
-    }
+}
 
-    .filter li {
+.filter li {
     margin: 8px;
-    }
+}
     .filter .Category {
     margin: 4px;
-    }
+}
 
-    .filter .Price {
+.filter .Price {
     margin: 4px;
-    }
+}
 
-    .filter .Designer {
+.filter .Designer {
     margin: 4px;
-    }
+}
 
-    .filter .Color {
+.filter .Color {
     margin: 4px;
-    }
+}
 
-    .filter .Material {
+.filter .Material {
     margin: 4px;
-    }
+}
 
-    .filter .title {
+.filter .title {
     margin: 5px 0;
     top: 3px;
     position: relative;
-    }
+}
 
-    #Category-title {
+#Category-title {
     margin-bottom: 15px;
-    }
+}
 
-    .filter .title:hover {
+.filter .title:hover {
     cursor: pointer;
-    }
+}
 
-    .filter .title .plus {
+.filter .title .plus {
     float: right;
-    }
+}
 
-    .filter .title .minus {
+.filter .title .minus {
     float: right;
-    }
+}
 
-    .product-list {
+.product-list {
     float: right;
-    }
+}
 
-    .size {
+.size {
     float: left;
     margin-left: 3%;
     margin-top: 20px;
-    }
+}
 
-    .sort-btn {
+.sort-btn {
     width: 150px;
     outline-color: invert;
     outline-style: none;
@@ -98,16 +98,17 @@ li {
     font-size: 13px;
     height: 25px;
     line-height: 25px;
-    }
+}
 
-    .hidden {
+.hidden {
     display: none;
-    }
-    .product-list .sort .sort-btn {
+}
+
+.product-list .sort .sort-btn {
     margin-bottom: 10px;
     position: relative;
     left: 80%;
-    }
+}
 
 /* pagination */
 .pagination {

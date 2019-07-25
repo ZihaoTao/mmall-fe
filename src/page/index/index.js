@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 18:26:45
+* @Last Modified time: 2019-07-24 18:45:11
 */
 
 'use strict';
@@ -15,7 +15,7 @@ var _mm = require('util/mm.js');
 var _product = require('service/product-service.js');
 var _category = require('service/category-service.js');
 var templateBanner = require('./banner.string');
-
+var Pagination = require('util/pagination/index.js');
 let count = 0;
 
 let templateCategory = `
@@ -28,7 +28,7 @@ let templateIndex = `
   {{#list}}
       <li class="p-item">
           <div class="p-img-con">
-              <a class="link" href="./detail?productId={{id}}" target="_blank">
+              <a class="link" href="./detail.html?productId={{id}}" target="_blank">
                   <img class="p-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}"/>
               </a>
           </div>
