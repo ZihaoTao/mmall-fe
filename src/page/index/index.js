@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 18:07:28
+* @Last Modified time: 2019-07-24 18:13:57
 */
 
 'use strict';
@@ -121,66 +121,6 @@ let templatePagination  = `<div class="pg-content">
                 // reload list
                 _this.loadList();
             });
-
-            $('.ALL').click(function() {
-                var $this = $(this);
-                _this.data.listParam.pageNum = 1;
-                _this.data.listParam.all = 0;
-                $this.addClass('active').siblings('.filter')
-                            .removeClass('active');
-                _this.loadList();
-            });
-
-            $('.ACCESSORIES').click(function() {
-                var $this = $(this);
-                _this.data.listParam.pageNum = 1;
-                _this.data.listParam.all = 1;
-                $this.addClass('active').siblings('.filter')
-                            .removeClass('active');
-                _this.data.listParam.categoryId = '100001';
-                _this.loadList();
-            });
-
-            $('.OUTERWEAR').click(function() {
-
-                var $this = $(this);
-                _this.data.listParam.pageNum = 1;
-                _this.data.listParam.all = 1;
-                $this.addClass('active').siblings('.filter')
-                            .removeClass('active');
-                _this.data.listParam.categoryId = '100002';
-                _this.loadList();
-            });
-
-            $('.TOP').click(function() {
-                var $this = $(this);
-                _this.data.listParam.pageNum = 1;
-                _this.data.listParam.all = 1;
-                $this.addClass('active').siblings('.filter')
-                            .removeClass('active');
-                _this.data.listParam.categoryId = '100003';
-                _this.loadList();
-            });
-
-            $('.BOTTOM').click(function() {
-                var $this = $(this);
-                _this.data.listParam.pageNum = 1;
-                _this.data.listParam.all = 1;
-                $this.addClass('active').siblings('.filter')
-                            .removeClass('active');
-                _this.data.listParam.categoryId = '100004';
-                _this.loadList();
-            });
-
-            $('.SHOES').click(function() {
-                var $this = $(this);
-                _this.data.listParam.pageNum = 1;
-                _this.data.listParam.all = 1;
-                $this.addClass('active').siblings('.filter')
-                            .removeClass('active asc desc');
-                _this.data.listParam.categoryId = '100005';
-                _this.loadList();
-            });
         },
         // load list
         loadList: function() {
@@ -191,12 +131,10 @@ let templatePagination  = `<div class="pg-content">
                 listHtml = _mm.renderHtml(templateCategory, {
                     list: res
                 }); 
-                console.log(res);
                 $('#Category-menubar').html(listHtml);
                 let categoryItems = $('#Category-menubar').children();
-                console.log(categoryItems);
                 for (let i = 0; i < categoryItems.length; i++) {
-                    categoryItems[i].click(function() {
+                    categoryItems[i].on("click", function() {
                         var $this = $(this);
                         _this.data.listParam.pageNum = 1;
                         _this.data.listParam.all = 1;
