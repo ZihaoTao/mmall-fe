@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 18:24:55
+* @Last Modified time: 2019-07-24 18:26:45
 */
 
 'use strict';
@@ -84,6 +84,23 @@ let templatePagination  = `<div class="pg-content">
             this.bindEvent();
         },
         obload: function() {
+             var _this = this,
+                listHtml = '',
+                listParam = this.data.listParam; 
+            _category.getCategoryList(listParam, function(res) {
+                listHtml = _mm.renderHtml(templateCategory, {
+                    list: res
+                }); 
+                $('#Category-menubar').html(listHtml);
+                $('#Category-menubar').children().each(function() {
+                    $(this).click(function() {
+                        var id = $(this).attr('class');                        _this.data.listParam.pageNum = 1;
+                        _this.data.listParam.all = 1;
+                        _this.data.listParam.categoryId = id;
+                        _this.loadList();
+                    });
+                });
+            });
             this.loadList();
         },
         bindEvent : function(){
@@ -127,20 +144,6 @@ let templatePagination  = `<div class="pg-content">
             var _this = this,
                 listHtml = '',
                 listParam = this.data.listParam; 
-            _category.getCategoryList(listParam, function(res) {
-                listHtml = _mm.renderHtml(templateCategory, {
-                    list: res
-                }); 
-                $('#Category-menubar').html(listHtml);
-                $('#Category-menubar').children().each(function() {
-                    $(this).click(function() {
-                        var id = $(this).attr('class');                        _this.data.listParam.pageNum = 1;
-                        _this.data.listParam.all = 1;
-                        _this.data.listParam.categoryId = id;
-                        _this.loadList();
-                    });
-                });
-            });
 
             if(_this.data.listParam.all === 1) {
                 _product.getProductList(listParam, function(res) {
