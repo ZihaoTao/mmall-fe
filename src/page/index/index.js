@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 16:51:36
+* @Last Modified time: 2019-07-24 17:08:08
 */
 
 'use strict';
@@ -190,9 +190,9 @@ let templatePagination  = `<div class="pg-content">
 
             _category.getCategoryList(listParam, function(res) {
                 listHtml = _mm.renderHtml(templateCategory, {
-                    list: res.data
+                    list: res.list
                 });
-                console.log(res.data);
+                console.log(res.list);
                 $('.Category-items').html(listHtml);
             });
 
