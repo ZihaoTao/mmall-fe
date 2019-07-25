@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-10-31 23:36:11
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 17:29:58
+* @Last Modified time: 2019-07-24 17:32:04
 */
 
 'use strict';
@@ -189,7 +189,7 @@ let templatePagination  = `<div class="pg-content">
                 listParam = this.data.listParam; 
             _category.getCategoryList(listParam, function(res) {
                 listHtml = _mm.renderHtml(templateCategory, {
-                    list: res.list
+                    list: res
                 }); 
                 console.log(res);
                 $('#Category-menubar').html(listHtml);
