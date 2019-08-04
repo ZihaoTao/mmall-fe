@@ -6,7 +6,6 @@
 */
 .page-wrap {
     padding:40px 0;
-    background-image: url('../../image/background/pomegranate.jpg');
     /*Photo by NordWood Themes on Unsplash*/
     background-size: cover;  
     -webkit-background-size: cover;
@@ -20,6 +19,7 @@
     margin: 0 auto;
     width: 400px;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .user-con .user-title {
