@@ -2,14 +2,15 @@
 <html lang="en">
     <head>
         <%= require('html-loader!./layout/head-common.html') %>
-        <title><%= htmlWebpackPlugin.options.title %> - pomegranate - online shopping mall</title>
-    </headPomegranate    <body>
+        <title><%= htmlWebpackPlugin.options.title %> - online shopping mall</title>
+    </head>
+    <body>
         <%= require('html-loader!./layout/nav.html') %>
         <%= require('html-loader!./layout/header.html') %>
         <div class="crumb">
             <div class="w">
                 <div class="crumb-con">
-                    <a class="link" href="./index.html">Pomegranate</a>
+                    <a class="link" href="./index.html">FashionforConservation</a>
                     <span>></span>
                     <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
                 </div>
@@ -31,6 +32,5 @@
           <!-- page container -->
           <div class="pagination"></div>
         </div>    
-        <%= require('html-loader!./layout/footer.html') %>
     </body>
 </html>
