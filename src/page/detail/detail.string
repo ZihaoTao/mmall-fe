@@ -1,6 +1,6 @@
 <div class="all-top">
   <div class="all">
-    <div class="container">
+    <div class="container-img">
       <div class="left">
         <div class="up control">
           <i id="up" class="fas fa-chevron-up"></i>

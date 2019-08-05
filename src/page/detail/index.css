@@ -351,7 +351,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .container-img {
     position: relative;
     width: 500px;
     height: 115px;
