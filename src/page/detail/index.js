@@ -98,33 +98,6 @@ let page = {
             event.stopPropagation();
           });
 
-
-          $(document).on('click', '.description', function(event) {
-            $('.select').removeClass('select');
-            $('.description').addClass('select');
-            $('.description-con').show();
-            $('.detail-con').hide();
-            $('.delivery-con').hide();
-            event.stopPropagation(); 
-          });
-
-          $(document).on('click', '.detail', function(event) {
-            $('.select').removeClass('select');
-            $('.detail').addClass('select');
-            $('.description-con').hide();
-            $('.detail-con').show();
-            $('.delivery-con').hide();
-            event.stopPropagation(); 
-          });
-
-          $(document).on('click', '.delivery', function(event) {
-            $('.select').removeClass('select');
-            $('.delivery').addClass('select');
-            $('.description-con').hide();
-            $('.detail-con').hide();
-            $('.delivery-con').show();
-            event.stopPropagation(); 
-          });
       },
       // load detail
       loadDetail: function() {

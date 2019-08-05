@@ -31,12 +31,6 @@
       <div class="p-info-item p-price-con">
         <span class="information">$ {{price}}</span>
       </div>
-      <div class="label">Size :</div>
-      <div class="size-select">
-      </div>
-      <div class="label">Color :</div>
-      <div class="color-selector">
-      </div>
       <div class="p-info-item">
         <span class="label">Stock :</span>
         <span class="information">{{stock}}</span>
@@ -63,26 +57,13 @@
 </div>
 <div class="all-down">
   <div class="details-navi">
-    <span class="description select">Description</span>
-    <span class="detail">Detail</span>
-    <span class="delivery">Delivery</span>
+    <span class="description">Description</span>
   </div>
   <div class="underline">
   </div>
   <div class="details-info">
-    <div class="description-con">
-      <ul>
-        <li>From Where: {{fromWhere}}</li>
-        <li>How Made: {{howMade}}</li>
-        <li>Goal: {{goal}}</li>
-        <li>Cause: {{cause}}</li>
-      </ul>
-    </div>
-    <div class="detail-con" style="display: none;">
+    <div class="detail-con">
       {{{detail}}}
-    </div>
-    <div class="delivery-con" style="display: none;">
-      No delivery
     </div>
   </div>
 </div>
