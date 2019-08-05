@@ -24,11 +24,11 @@
 }
 
 .wrapper,
-.container {
+.container-img {
   margin: 0 auto;
 }
 
-.container {
+.container-img {
   position: relative;
   border-radius: 4px;
   width: 500px;
@@ -104,11 +104,15 @@
 }
 
 .info .p-info-item {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .info .label {
   padding: 10px;
+}
+
+.info .information {
+    padding: 10px;
 }
 
 .color-selector {
