@@ -141,21 +141,21 @@ let page = {
               // render
               html = _mm.renderHtml(templateIndex, res);
               $pageWrap.html(html);
-              let arr = res.color.split("_");
-              for(let i = 0; i < arr.length; i++) {
-                let d = document.createElement('div');
-                d.classList.add('colors-item');
-                d.classList.add('color' + arr[i]);
-                $('.color-selector').append(d);
-              }
+              // let arr = res.color.split("_");
+              // for(let i = 0; i < arr.length; i++) {
+              //   let d = document.createElement('div');
+              //   d.classList.add('colors-item');
+              //   d.classList.add('color' + arr[i]);
+              //   $('.color-selector').append(d);
+              // }
 
-              let ar = res.sizeRange.split("_");
-              for(let i = 0; i < ar.length; i++) {
-                let o = document.createElement('div');
-                o.classList.add('size-item');
-                o.innerText = ar[i];
-                $('.size-select').append(o);
-              }
+              // let ar = res.sizeRange.split("_");
+              // for(let i = 0; i < ar.length; i++) {
+              //   let o = document.createElement('div');
+              //   o.classList.add('size-item');
+              //   o.innerText = ar[i];
+              //   $('.size-select').append(o);
+              // }
               _this.loadList(res.categoryId);
           }, function(errMsg) {
               $pageWrap.html('<p class="err-tip"> Cannot find this product. </p>');
