@@ -11,7 +11,7 @@
           </div>
           {{#subImages}}
           <div class="slide">
-          <img class="p-img" src="{{imageHost}}{{subImages}}" alt="{{name}}" />
+          <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}" />
           </div>
           {{/subImages}}
         </div>
