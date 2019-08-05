@@ -12,8 +12,8 @@ require('page/common/header-white/index.js');
 var _cart = require('service/cart-service.js');
 var _product = require('service/product-service.js');
 var _mm = require('util/mm.js');
-var templateIndex = require('./index.string');
-var template = require('./detail.string');
+var template = require('./index.string');
+var templateIndex = require('./detail.string');
 
 let page = {
       data: {
@@ -139,7 +139,7 @@ let page = {
               // keep res info
               _this.data.detailInfo = res;
               // render
-              html = _mm.renderHtml(template, res);
+              html = _mm.renderHtml(templateIndex, res);
               $pageWrap.html(html);
               // let arr = res.color.split("_");
               // for(let i = 0; i < arr.length; i++) {
