@@ -42,8 +42,7 @@ var config = {
         'user-center': ['./src/page/user-center/index.js'],
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'user-pass-update': ['./src/page/user-pass-update/index.js'],
-        'result': ['./src/page/result/index.js'],
-        'about': ['./src/page/about/index.js']
+        'result': ['./src/page/result/index.js']
     },
     output: {
         path: __dirname + '/dist/',
@@ -99,8 +98,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('result', 'Result')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center', 'User Center')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'Change profile')),
-        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change password')),
-        new HtmlWebpackPlugin(getHtmlConfig('about', 'About'))
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change password'))
     ]
 };
 
