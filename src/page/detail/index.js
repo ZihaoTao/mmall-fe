@@ -139,7 +139,7 @@ let page = {
               // keep res info
               _this.data.detailInfo = res;
               // render
-              html = _mm.renderHtml(templateIndex, res);
+              html = _mm.renderHtml(template, res);
               $pageWrap.html(html);
               let arr = res.color.split("_");
               for(let i = 0; i < arr.length; i++) {
