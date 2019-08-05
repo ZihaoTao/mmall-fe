@@ -287,17 +287,6 @@
   margin-right: 10px; 
 }
 
-.sustainability-icons {
-  margin-top: 50px;
-  width: 360px;
-  display: flex;
-}
-  
-.sustainability-img {
-  width: 20%;
-  margin-left: 10px;
-}
-
 @media only screen and (max-width: 600px) {
   .container-img {
     position: relative;
