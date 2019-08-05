@@ -154,29 +154,10 @@
   outline: 1px solid green;
 }
 
-.select:after {
-  content: "";
-  width: 14px;
-  height: 8px;
-  position: absolute;
-  right: 20px;
-  top: 45%;
-
-  pointer-events: none;
-}
-
 .all-down .details-navi {
   width: 60%;
-  margin-left: 20px;
+  margin: auto;
   font-size: 20px;
-  color: #d8d8d8;
-}
-
-.all-down .details-navi span:hover {
-  cursor: pointer;
-}
-
-.all-down .details-navi .select {
   color: #666;
 }
 
