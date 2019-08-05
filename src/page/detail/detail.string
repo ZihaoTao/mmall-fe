@@ -1,0 +1,91 @@
+<div class="all-top">
+  <div class="all">
+    <div class="container">
+      <div class="left">
+        <div class="up control">
+          <i id="up" class="fas fa-chevron-up"></i>
+        </div>
+        <div class="slideDiv">
+          <div class="slide active">
+            <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}" />
+          </div>
+          {{#subImages}}
+          <div class="slide">
+          <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}" />
+          </div>
+          {{/subImages}}
+        </div>
+        <div class="down control">
+          <i id="down" class="fas fa-chevron-down"></i>
+        </div> 
+      </div>
+      <div class="right">
+        <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}" />
+      </div>      
+    </div>
+  </div>
+  <div class="info">
+    <div class="p-info-con">
+      <hi class="p-name">{{name}}</hi>
+      <div class="p-subtitle">{{subtitle}}</div>
+      <div class="p-info-item p-price-con">
+        <span class="information">$ {{price}}</span>
+      </div>
+      <div class="label">Size :</div>
+      <div class="size-select">
+      </div>
+      <div class="label">Color :</div>
+      <div class="color-selector">
+      </div>
+      <div class="p-info-item">
+        <span class="label">Stock :</span>
+        <span class="information">{{stock}}</span>
+      </div>
+      <div class="p-info-item p-count-con">
+        <span class="label">Quantity :</span>
+        <input class="p-count" value="1" readonly="" />
+        <span class="p-count-btn plus">+</span>
+        <span class="p-count-btn minus">-</span>
+      </div>
+      <div class="info-item">
+        <a class="btn cart-add">
+        <i class="fas fa-shopping-bag"> </i>
+           Add to Cart
+        </a>
+      </div>
+      <div class="sustainability-icons">
+        <img class="sustainability-img" src="https://static1.squarespace.com/static/57ff45b0cd0f686af926b722/t/5cbe41c90d9297f2b566c6e9/1555972556168/E_INVERTED+SDG+goals_icons-individual-cmyk-01.jpg" alt="sustainability-img" />
+        <img class="sustainability-img" src="https://static1.squarespace.com/static/57ff45b0cd0f686af926b722/t/5cbe41cf8165f5bd15f298b4/1555972561677/E_INVERTED+SDG+goals_icons-individual-cmyk-02.jpg" alt="sustainability-img" />
+        <img class="sustainability-img" src="https://static1.squarespace.com/static/57ff45b0cd0f686af926b722/t/5cbe41d3b70ede0001c102a5/1555972566125/E_INVERTED+SDG+goals_icons-individual-cmyk-03.jpg" alt="sustainability-img" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="all-down">
+  <div class="details-navi">
+    <span class="description select">Description</span>
+    <span class="detail">Detail</span>
+    <span class="delivery">Delivery</span>
+  </div>
+  <div class="underline">
+  </div>
+  <div class="details-info">
+    <div class="description-con">
+      <ul>
+        <li>From Where: {{fromWhere}}</li>
+        <li>How Made: {{howMade}}</li>
+        <li>Goal: {{goal}}</li>
+        <li>Cause: {{cause}}</li>
+      </ul>
+    </div>
+    <div class="detail-con" style="display: none;">
+      {{{detail}}}
+    </div>
+    <div class="delivery-con" style="display: none;">
+      No delivery
+    </div>
+  </div>
+</div>
+<div class="youMayAlsoLike"> You May Also Like</div>
+<div class="youMayLike">
+</div>
