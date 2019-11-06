@@ -47,10 +47,7 @@
 /* list con */
 .p-list-con {
     margin-top: 15px;
-    width: 95%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
 .p-list-con .p-item {

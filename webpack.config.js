@@ -46,7 +46,7 @@ var config = {
     },
     output: {
         path: __dirname + '/dist/',
-        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.taozihao.xyz/product/frontend/mmall-fe/dist/',
+        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.taozihao.xyz/mmall-fe/dist/',
         filename: 'js/[name].js'
     },
     externals: {
