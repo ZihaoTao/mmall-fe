@@ -50,6 +50,7 @@ var page = {
             });
         }, function(errMsg) {
             $listCon.html('<p class="err-tips">Cannot load order, please reload the page.</p>');
+            window.location.hash = "http://www.taozihao.xyz/user-login.html?redirect=http%3A%2F%2Fwww.taozihao.xyz%2Forder-list.html";
         });
     },
     loadPagination: function(pageInfo) {
