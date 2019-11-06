@@ -1,18 +1,24 @@
-{{#list}}
-    <li class="p-item">
-        <div class="p-img-con">
-            <a class="link" href="./detail.html?productId={{id}}">
-                <img class="p-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}"/>
-            </a>
-        </div>
-        <div class="p-price-con">
-            <span class="p-price">${{price}}</span>
-        </div>
-        <div class="p-name-con">
-            <a class="p-name" href="./detail.html?productId={{id}}">{{name}}</a>
-        </div>
-    </li>   
-{{/list}}
-{{^list}}
-    <p class="err-tip"> Cannot find products matching this selection. </p>
-{{/list}}
+<div class="banner">
+    <ul>
+        <li>
+            
+                <img class="banner-img" src="../../image/banner/banner1.jpg" />
+           
+        </li>
+        <li>
+      
+                <img class="banner-img" src="../../image/banner/banner3.jpg" />
+      
+        </li>
+        <li>
+            
+                <img class="banner-img" src="../../image/banner/banner4.jpg" />
+        
+        </li>
+        <li>
+            
+                <img class="banner-img" src="../../image/banner/banner5.jpg" />
+        
+        </li>
+    </ul>
+</div>

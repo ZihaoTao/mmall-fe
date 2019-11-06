@@ -2,7 +2,7 @@
 * @Author: Zihao Tao
 * @Date:   2018-11-14 17:44:16
 * @Last Modified by:   Zihao Tao
-* @Last Modified time: 2019-07-24 16:32:57
+* @Last Modified time: 2018-11-17 21:03:42
 */
 
 'use strict';
@@ -27,14 +27,6 @@ var _product = {
             success : resolve,
             error   : reject
         });
-    },
-    getAllProductList : function(listParam, resolve, reject){
-        _mm.request({
-            url     : _mm.getServerUrl('/product/all.do'),
-            data    : listParam,
-            success : resolve,
-            error   : reject
-        });
-    }
+    } 
 }
 module.exports = _product;

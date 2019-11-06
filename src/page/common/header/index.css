@@ -39,13 +39,13 @@
     color: #ccc;
     outline: none;
     background: transparent;
-    border: none;
+    border: 1px solid grey;
 }
 
 .header .search-con .search-btn {
     position: absolute;
     width: 80px;
-    height: 35px;
+    height: 37px;
     font-size: 12px;
     line-height: 35px;
     background: transparent;

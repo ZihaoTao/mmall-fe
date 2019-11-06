@@ -45,8 +45,8 @@
     opacity: 1;
 }
 
-@media screen and (max-width:1000px) {
+/*@media screen and (max-width:1000px) {
     .banner-con .banner-arrow {
         top: 80px;
     }
-}
+}*/
