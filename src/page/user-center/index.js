@@ -31,7 +31,7 @@ var page = {
             userHtml = _mm.renderHtml(templateIndex, res);
             $('.panel-body').html(userHtml);
         }, function(errMsg) {
-            window.location.hash = "http://www.taozihao.xyz/user-login.html?redirect=http%3A%2F%2Fwww.taozihao.xyz%2Fuser-center.html";
+            window.location = "http://www.taozihao.xyz/user-login.html?redirect=http%3A%2F%2Fwww.taozihao.xyz%2Fuser-center.html";
         });
     }
 };
