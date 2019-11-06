@@ -127,16 +127,8 @@
         font-size: 10px;
     }
 
-    .home-title .title .text1 {
-        font-size: 20px;
-    }
-
-    .home-title .title .text2 {
-        font-size: 15px;
-    }
-
-    .banner-con {
-        background-image: url("../../image/banner/banner2.jpg");
+    .home-title {
+        display: none;
     }
 }
 
