@@ -35,7 +35,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "hogan.js": "^3.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "state-cities": "^1.0.6"
   }
 }
